@@ -1,0 +1,92 @@
+*{
+  font-family:Georgia;
+}
+body{
+ background-color: #CCCCCC;
+}
+
+.navigation-bar{
+  text-align:left;
+  padding:5px;
+  margin:30px;
+  border: 5px solid black;
+  border-radius:20px;
+  width:80%;
+  margin-left:80px;
+  margin-right:5px;
+  background-color:#999999;
+  color : #0066FF;
+}
+
+.header{
+  text-align:center;
+  padding:10px;
+  margin:30px;
+  border: 5px solid black;
+  border-radius:20px;
+  width:80%;
+  margin-left:80px;
+  margin-right:5px;
+  background-color:#999999;
+  color : #0066FF;
+}
+
+.Lesson{
+  color : #0066FF;
+  text-align:left;
+  padding:10px;
+  margin:30px;
+  border: 5px solid black;
+  border-radius:20px;
+  width:93%;
+  margin-left:10px;
+  margin-right:auto;
+}
+
+.Lessontext{
+  color : #000000;
+  text-align:left;
+  padding:10px;
+  margin:30px;
+  border: 5px solid black;
+  border-radius:20px;
+  width:93%;
+  margin-left:10px;
+  margin-right:auto;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+
+.example{
+  color : #009933;
+  padding:10px;
+  margin:10px;
+  border: 2px solid black;
+  border-radius:20px;
+  width:93%;
+  text-align:left;
+  margin-left:10px;
+  margin-right:auto;
+}
+
+.Importanttips{
+  color : #0066FF;
+  text-align:left;
+  text-transform: uppercase;
+  padding:10px;
+  margin:30px;
+  border: 5px solid blue;
+  border-radius:20px;
+  width:66%;
+  margin-left:10px;
+  margin-right:auto;
+}
+
+.error{
+  color : red;
+}

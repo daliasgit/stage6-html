@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+	
+<form method="post" action="/">
+	<h2>Add Comments</h2>
+	<input type="text" name="comment">
+	{% if comments %}
+		{% for comment in comments %}
+			<input type= "hidden" name= "comment" value= "{{comment}}">
+		{% endfor %}
+	{% endif %}
+	<button>Add</button>
+		<br>
+	<span class="error" font color="red">{{error}}</span>
+	{% if comments %}
+		<h2>Comments</h2>
+		<ul>
+			{% for comment in comments %}
+				<li>{{comment}}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+			
+</form>
+
+{% endblock %}	
+	

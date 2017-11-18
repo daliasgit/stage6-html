@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	</head>
+	<header>
+	<div class= "header">
+	<h1>Intro to Programming Notes</h1>
+	</div>
+		<div class="navigation-bar">
+			<ul>
+				<li><a href="#stage-1"><h3>Stage 1</h3></a></li>
+				<li><a href="#stage-2"><h3>Stage 2</h3></a></li>
+				<li><a href="#stage-3"><h3>Stage 3</h3></a></li>
+				<li><a href="#stage-4"><h3>Stage 4</h3></a></li>
+				<li><a href="#stage-5"><h3>Stage 5</h3></a></li>
+			</ul>
+		</div>
+	</header>
+	<body>
+	{% block content %}
+	{% endblock %}
+	
+	<div class="Lesson">
+		  <h2 id="stage-1">Stage 1: HTML and Web Basics</h2>
+		</div>
+
+			<div class = "Lessontext">
+			  	<p>
+			     Programming is very literal. You have to tell the
+			     computer exactly what to do so that you get the 
+			     results you want.
+			    </p>
+			    <p>
+			    <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> 
+			    is a type of document for web content.
+			    It contains a <em>Title, Header and Body</em> structure.
+			    </p>
+			    <p>
+			    The body of an <a href="https://en.wikipedia.org/wiki/HTML">
+			    HTML document</a>
+			    is made up of text that has markup language. This text
+			    can be
+			    <em> inline </em> or <em>block</em>. <b>Block</b> 
+			    places a box around the text<br>
+			    much like a text box drawn in Word or Power point.
+			 	</p>
+			  <p>
+			    <b>Void</b> tags,such as <em>break</em>, do not 
+			    require closing tags whereas other tags such as 
+			    the one used for <em>italics</em> requires a closing 
+			    tag with an /
+			    at the end of the text. If a closing tag is not used 
+			    where appropriate,<br>
+			    then everything after the opening tag will take on 
+			    the same style or attribute and there will be no 
+			    terminating point.<br>                          
+			</div>                         
+		
+			<div class = "Lessontext">   
+			     <em>"Boxes Boxes Boxes!!!"</em> 
+			     Breaking down pages into boxes to be identified, 
+			     sized, and characterized is an important step to
+			     web development.
+			     </p> 
+			     <p>Think of HTML as the house or structure, CSS as
+			     the styling or decor or architecture of the house, 
+			     and Java Script as the Interactive components that 
+			     can change the attributes of the structure.
+			     </p>
+			     <p><b>DOM</b> is a reference to the Tree Structure of 
+			     an HTML document. It is hierarchical in nature and 
+			     HTML creates the elements of the <b>DOM</b>.
+			     </p>
+			 </div>
+		           
+			 <div class = "Lessontext">           
+			     <p>CSS is the styling-- 
+			     Cascading Stying Sheets-- used to apply to HTML 
+			     documentation. It uses the concept of <em>inheritance
+			     </em> where descendant elements inherit text related
+			     properties of ascendant elements. This, however, does
+			     not apply with box related properties.
+			 	 </p>
+			     <p> CSS allows you to assign attributes to elements
+			     of your document in a number of ways. For example by 
+			     setting font, font size, color, background color, etc. 
+			     It
+			     also allows you to control the size of the boxes in your
+			     document.</p>  
+			     <p> You can assign those attributes in groups using 
+			     	class 
+			     selectors such as "&lt;div class=h1&gt;". This allows 
+			     the
+			     user to ascribe styling to everying that is in the 
+			     header
+			     elements</p>
+			     <p> There are two recommended ways to include CSS in 
+			     	your HTML 
+			     document.                       
+			     <ul>
+			     <li>Write CSS in the "&lt;head&gt;" of your 
+			     HTML                   
+			     <li>Link your HTML to a separate CSS 
+			     file                   
+			     </ul>
+			                            
+			     <p>Setting box sizes can be tricky. There are two ways 
+			     to
+			     do this.                      
+			     <ul>                   
+			     <li>Set sizes in terms of percents rather than pixels. 
+			     <li>Set the box-sizing attribute to border-box for 
+			     every element. 
+			     </ul> 
+			     Divs by default will take up the entire width of the 
+			     page.
+			     Using display: flex; will allow the divs to appear side 
+			     by side
+			     
+			     <p>
+			     Images should include an alt to describe what should 
+			     appear if the browser prohibits the image from appearing
+			     .
+			   	 </p> 
+			   	 <p><b>Code, Test, Refine</b> are important steps to 
+				creating your web page. Looking for natural boxes,
+				repeated styles and semantic elements, write your HTML 
+				and apply styles from biggest to smallest.</p>
+				<p>It is also important to avoid repetition by using CSS.
+				 This is achieved by using CSS styles to apply to 
+				 sections throughout the document such as title, header,
+				 and text. This ensures document consistency and allows 
+				 you to easily add to or update HTML without 
+				 repetitively ascribing specific attributes throughout 
+				 the document</p>
+				<p> Developer Tools are a nifty way to view you site, 
+				code and changes at the same time. Also use these 
+				links to verify your page complies with HTML and CSS 
+				standards.Click here: 
+				<a href="http://validator.w3.org/#validate_by_input">
+				
+				To verify HTML</a> and here:
+				<a href="http://jigsaw.w3.org/css-validator/#validate_by_input">
+				To verify CSS</a>
+				</p>	     
+			</div>                              		
+		</div>	
+		<div class="Lesson">
+		  <h2 id="stage-2">Stage 2: Automate Your Page</h2>
+		</div> 
+	 		<div class = "Lessontext">
+	      		<p>Programming is the core of computer science. A 
+	      			computer 
+	      			can do very powerful and fast computations but it
+	      			needs a program to tell it what to compute or do. 
+	      			There are many different languages<br>
+	        		and they all have an interpreter that follow 
+	        		instructions in its code in order to tell the 
+	        		computer
+	        		what to do. This is much like what is taught in 
+	        		Lesson
+	        		1 but instead using the Python language for teaching 
+	        		programming. Another theme carried here is that 
+	        		language ambiguity will result in errors not the
+	        		computer not producing the desired result.<br>
+	        	<br>
+	        		Similarly as learned with HTML and CSS programming, 
+	        		Python requires a structure. In this lesson the 
+	        		structure is analogous to sentence structure (Subject
+	        		-
+	        		Verb-Noun.) In Python this grammar structure is 
+	        		represented as Expressions and Operators. Expresion 
+	        		can be another Expression-Operator-Expression or it 
+	        		can be a number. It starts from a non-terminal term 
+	        		and uses derivation to break the structure down to a 
+	        		terminal value.<br>
+	        	<br>
+	        		Also an Expression can be made another expression by
+	        		using parentheses.
+	      		</p>
+	        	</div>  
+	 			<div class = "Lessontext">
+	    		<p>Variables and strings allow you to more easily and 
+	    			cleanly code for searching web documents.
+	 				<ul>
+	        		<li><b>Variables</b> are assignments of values to a 
+	        			name that can be used in Python computing and 
+	        			allow the value to be changed
+	        		<li><b>Strings</b> are a sequence of characters that 
+	        			can be assigned to a variable. Quotations must 
+	        			be 
+	        			used to define a string
+	        		<li><b>Indexing Strings</b> enable extracting a 
+	        			subsequence of a string and the first position or
+	        			start and stop of the subsequence can be used to
+	        			extract. Using [0:] for example will display the 
+	        			entire string
+	        		<li><b>Find String</b> operation which is represented
+	        		by string.find(string) provides an output that gives 
+	        		the position where the substring is found. An output 
+	        		of -1 means string is not found.
+	        		<li><b>Finding String in Strings</b> uses the 
+	        			(subsequence string, number) to provide the start
+	        			position of searching a target subsequence. 
+	      			</ul>
+	    		   
+	    			</div>          
+	 			<div class = "Lessontext">
+	      
+	    		<p>Using Procedures is about matching inputs to outputs.
+	    		To do this you define a function in which parameter(s)
+	    		 is 
+	    		passed. The parameter is enclosed in parentheses like 
+	    		"(name)". Once defined, then the function is used to 
+	    		create the output.<br>
+	      		"&lt;"div class = example&gt;"
+	        		def rest_of_string(s):<br>
+	              	return s[1:]<br>
+	              	print rest_of_string ('audacity)<br>
+	              	<em>Output</em> is Udacity
+	        	 
+	    		<p>In the above exmample every line starting from def 
+	    			through return is "Defining" the procedures. The
+	    			 Print
+	    			line and it's output are the "Use" part of the
+	    			procedure.<br>    
+	        	Note that your procedure always needs a return statement
+	        	to make the function work.</p>    
+	    		<p>"Procedure Composition" uses outputs from procedures 
+	    			as 
+	    			inputs to the next procedure.Such as shown here:
+	    		</p>
+					<div class = "example">
+		      			"&lt;div class = example&gt;"   
+		      			def square(n)<br>
+		      			return n*n<br>
+		      			x=5<br>
+		      			print square(x)<br>  
+		      			print square(square(x))<br>
+		      			<em>Output</em> is 1874161<br>   
+		      		</div>
+	      		</div>
+	 		<div class = "Lessontext">
+	 		     
+	    		<p>This lesson teaches decisions and repetitions using
+	    		Python. <b>Comparison Operators</b> are one way to do
+	    		this. 
+	      			<ul>
+	        		<li>Less than or Equal to "&lt;&gt;=" 
+	        		<li>Not Equal to "!="
+	        		<li>Equality comparsion "==" vs. Assignment "="
+	      			</ul>
+	    		         
+	    		<p>The "Or" operator only evaluates what it needs to. If
+	    		the first expression evaluates to "True" it will give 
+	    		"True" and not 
+	    		evaluate to next expression. Same thing for "False".
+	    		</p>
+
+	    		<p>It is important to note that with only a few operators
+	    			you can simulate any operation you want: arithmetic, 
+	    			comparison, procedures, if, etc.</p>    
+          
+    			<p><b>Loops</b> using a "While" statement allows a test 
+    			expression to be checked 
+    			multiple times vs. an If statement which only allows once.
+    		
+    			Let's take a look at an example.</p> 
+    				<div class = "example">
+			        	def print_numbers(n):<br>
+			              i=1<br>
+			              while "i" "&lt;" "n" <em> quotes here only for emphasis
+			              </em> <br>
+			              print i<br>
+			              i=i+1<br>
+    				</div>
+    			<p>Use "break" statement to breat a loop so that it will
+    			not run on indefinitely</p>
+		    		<div class = "Importanttips">
+		      		<p>Good to Know! Use "max" in your procedure to identify the larger value.
+		    		</p>
+					</div>
+				</div>
+		</div>
+		<div class="Lesson">
+		  <h2 id="stage-3">Stage 3: Power of Abstraction</h2>
+		</div>  
+	 		<div class = "Lessontext">
+	 		<p> Hiding detail in programming is called 
+	 		<em>Abstraction</em>. 
+	 		This is seen in functions such as "Print" Hello World or 
+	 		using 
+	 		"webbrowser.open" to open a link. "If Statements", "Loops" 
+	 		and 
+	 		"Functions" are other functions that demonstrate Abstraction.
+	 		This lesson covers Abstraction
+	 		as well as Classes and Object oriented programming.</p>  
+			</div>  
+	 		<div class = "Lessontext">
+	 		<p> The best technique When you go about building a program is 
+	 			to 
+	 		first write in plain english what steps you would take to get 
+	 		to 
+	 		the end result. As an example</p>
+	 		<div class ="example">
+	 			<ul>
+	 			<li>wait for 2 hours<br>
+	 			<li>open browser<br>
+	 			<li>repeat steps 3 times<br>
+	 			</ul>
+	 		</div>
+	 		<p> IDLE and Python shell allows you to build your python 
+	 			code 
+	 			and run it to see the output. For the first project in 
+	 			this 
+	 			lesson, we created code to open a site using webbrowser.
+	 			open.
+	 			This is a function in the python library. "Import
+	 			webbrowser" in your python code will import the 
+	 			webbrowser
+	 			function. "Import time" imports a library that includes 
+	 			the
+	 			fuction time.sleep. This lets you incorporate a delay in 
+	 			seconds to running the next function. In this case, the
+	 			webbrowser.</p>
+	 		<p> Python Standard library has modules that include 
+	 			functions
+	 		    defined inside of it, such as "time" which includes def 
+	 		    ctime, def sleep. "Abstraction" allows us to focus on 
+	 		    the 
+	 		    program we want to create. We can read documentation the 
+	 		    libraries to find out what the functions inside them 
+	 		    will do
+	 		     and see how they help us create our code.</p>
+	 		<p> Functions can help make things easier.  
+	 			To decode a message, "import OS" or "import os.path". 
+	 			Steps
+	 			to take to rename a bunch of files would be:
+	 			<ul>
+	 			<li><em>get all the file names</em>
+	 			<li><em>for each file, rename it</em>
+	 			</ul>
+	 		<p> Again because we are using a library in Python, we can
+	 			 scan
+	 			documentation for that library to find the appropriate 
+	 			function for renaming a file. In this case, 
+	 			<b>os.rename</b>
+	 			which lets you take
+	 			the existing file name and identify the new 
+	 			corresponding 
+	 			file name.</p>
+	 			<p> "os.getcwd" and "os.chdir" allow you to hone in on the 
+	 			file
+	 			location and reset the directory once the program is run.
+	 			</p>
+	 		<p>	If condition is incorrect, program will return an error 
+	 			which
+	 			we call an "Exception".</p>
+	 		<p>"OS" module in python has "listdir" and "rename" functions
+	 			. 
+	 			Hiding of detail behind the functions in computer 
+	 			science is
+	 			called "Abstraction".</p>
+
+			</div>      
+	 		<div class = "Lessontext">
+	 		<p> This lesson teaches use of <b>Classes</b> by introducing 
+	 			"turtle" to create shapes. When you import a <b>Class</b>
+	 			 in
+	 			Python like turtle, it's like retrieving the blueprint
+	 			of a 
+	 			building that provides information about its structure 
+	 			like 
+	 			size, dimensions, rooms, levels, etc. </p>
+	 		<p> Within a Class you are able to use or create "Instances" 
+	 			or
+	 		 	"Objects". This would be like creating multiple
+	 		 	blueprints 
+	 		 	for the same building but it has a unique name or 
+	 		 	identifier.
+	 		 	Let's take a look at an example.</p> 
+	    	<div class = "example">
+	        	This python file contains code that imports the Class of
+	        	turtle, and creates instances called "Brad", "Angie", 
+	        	"Marge" and "Ken" and 
+	        	others to initialize memory to perform certain functions. 
+	        	"Brad and Angie" are used to tell the code to move lines 
+	        	certain directions and patterns.</div>
+	        	
+	    		<p>"Twillio" is another good example where Class is used. 
+	    		It is one of thousands of external Python packages or 
+	    		modules and specifically allows you to send text messages.
+	    		</p>
+	    	<div class = "example">
+	    		from twilio.rest import TwilioRestClient
+	    	</div>
+				<p>Python keyword "from" allows you to import specific 
+				attributes from a module into the current name space. 
+				Similarly you are able to initialize and create objects
+				 or 
+				instances of the TwilioRestClient to send text messages.
+			</p>
+			
+			<p> "Built in Functions" exist in Python, such as <b>Open</b> 
+				which
+				returns the "object" of the file type.
+				<div class = "example">
+				quotes = open (file_location)<br>
+				Here Open is calling some type of init function
+			</div>
+				
+			<p>	Another example of built-in functions is with "urllib"  
+				which is a module in python that helps connect to the
+				internet to get info. "urlopen" is similar in that it 
+				opens connections to the website on the internet and 
+				perform
+				certain actions. </p>
+			<div class = "example">
+				def check_profanity(text_to_check):<br>
+	    		connection = urllib.urlopen("http://www.wdyl.<br>
+	    		com/profanity?q="+text_to_check)<br>
+	    		output = connection.read()<br>
+	    	</div>
+	    	<p>	This is part of python code to build an profanity editor
+	    	 that looks for indecent language within a movie 
+	    	 titles/descriptions. So urllib is a module in python.
+	    	 Urlopen is a function inside of it.
+	 		</p>   
+    	
+			</div> 
+	 		<div class = "Lessontext">
+	 		<p> Here we learn how to build our own Class, such as the 
+	 			class 
+	 			Movie. So like a blueprint think of things you want to 
+	 			know 
+	 			about that particular structure and list them. In the 
+	 			case 
+	 			of the class Movie we noted: title, youtube trailer, 
+	 			reviews, poster image, and storyline. </p>
+	 		<p> <b>Class variables</b> are instances in a class that 
+	 			share these 
+	 			variables to determine their attribute. There are pre-
+	 			existing class variables such as "__doc__". <b>Instance 
+	 			Variables</b></p>
+	 		<p><b>Constructor</b> is the thing behind an instance or 
+	 			"Init" function that allows you to call on it to do some 
+	 			kind of action.</p>
+	 		<p><b>Instance Method</b> are functions inside a Class that 
+	 			allow you to create instances of a class by using the 
+	 			"self"
+	 			parameter. "self" points to the object or instance, such 
+	 			as 
+	 			"Avator" or "Toy_Story". Behind the scenes it sets aside 
+	 			memory for an instance with its own variables called <b> 
+	 			Instance Variables </b></p>
+	 		<p><b>Inheritance</b> is the concept used with Parent/Child 
+	 			relationships where attributes are carried from Class to
+	 			 each of its Instances.  
+			</p>
+			<div class = "Importanttips">
+	      		<p>Good to Know! If you Google Python Style Guide,
+	      		 you'll 
+	      		find conventions on how to write programs.
+	    		</p>
+	    	</div>	
+		</div>
+		<div class="Lesson">
+		  <h2 id="stage-4">Stage 4: Let Anyone Modify Your Webpage</h2>
+		</div>   
+	 		<div class = "Lessontext">
+	 		<p>A<b>Network</b> is a group of entities that can
+	 		 communicate even though they are not directly 
+	 		 connected. Things that make up a network are message
+	 		 and bits, routers, and rules for deciding who gets 
+	 		 to use the resources (QoS)<p>
+	 		 <b>Latency</b> measures the time (milliseconds) it 
+	 		 	takes for a message to move from the source to
+	 		 	destination in a network.
+	 		 <b>Bandwidth</b> is the amount of information that 
+	 		 	can be transmitted per unit of time (bps). 
+	 		 	<a href "http://www.cnet.com/internet-speed-test/">cnet 
+	 		 	internet speed test </a> measures the bandwidth you're getting
+	 		 	over 
+	 		 	your internet.</p>
+	 			Adding more nodes and adding more bits are ways to reduce 
+	 			latency and increase number of things you can distinguish 
+	 			respectively.</p>
+	 		
+	 		<p><b>Protocol</b> is set of rules that tell you how 2 
+	 			entities can talk to each other, like a client 
+	 			and server. Client uses a protocol -- HTTP -- to send a message.
+	 			 The server gets the message, runs code, finds file, runs code
+	 			and sends back a response.</p>
+	 		<p><b>HTML documents</b> - contain a DOM structure: doctype; 
+	 		opening and closing HTML tags; the head which contains title, meta-
+	 		data, java 
+	 		script, css cscript, etc.; and the body tag which contains the 
+	 		content of what appears on the webpage.
+	 		<p><b>URL</b> or Uniform Resource Locator is made up of protocol 
+	 			(http://), host (www.udacity.com), and path.</p> 
+	 		<p><b>Query Parameter</b> is in the URL such as the Get parameter.
+	 		Example would be like "/foo?p=1&q=neat". "?" is used for the first 
+	 			parameter, "&" is used to separate for every parameter after. 
+	 			Name = value.</p> 
+	 		
+	 		<p><b>"#fragment"</b> is next in the URL path. It exists in the 
+	 			browser only and not sent to server. when there are query 
+	 			parameters, 
+	 		fragment follows.</p>
+	 		<p><b>Port</b> - to make an internet connection in a URL you need 
+	 			the address of a machine and a port. Between "localhost" and 
+	 			"path" is 
+	 		the port. Port default =80. "http://localhost:8000/" is typical.</p>
+	 		<p><b>HTTP</b> which is the main protocol of the web. Request from 
+	 			your browser begins with a request line. <b>Request line</b> is 
+	 			made up 
+	 		of Method - Path - Version such as "GET" (used to get a document) 
+	 		and "POST", the path which includes up through parameters but
+	 		does not include the fragment, and version which is usually HTTP/1.
+	 		1 or 1.0. Note that the path is a relative path. You could 
+	 		also specify the full path which would start with the http link 
+	 		through to the path and parameters.So the host is used for 
+	 		making the connection and the path is used for making the request.
+	 		</p>
+
+	 		<p><b>Request link</b> also includes headers (name: value). "Host" 
+	 			as in "Host: www.example.com" which is required in 1.1. 
+	 			Webservers may
+	 		 have multiple names so this is necessary. Next header is "User-
+	 		 Agent:" as in "User-Agent= chrome" which is who is making the 
+	 		 request (i.e., what type of machine). User agent important because 
+	 		 it helps you control who has access and how they can use your 
+	 		 site. Always use User-Agents appropriately when using your web 
+	 		 software.</p>
+	 		<p><b>HTTP Responses</b> look similar to request line. Status line 
+	 			(HTTP/1.1) - status code (200 which is ok, or 302 found or 404 
+	 			not 
+	 			found or 500 server error) - Reason phrase is the Status code 
+	 			verbiage such as ok, found, not found, server error. Status 
+	 			line 
+	 			is followed by a number of headers. Some are required, or 
+	 			assumed. "Date:", "Server:" which should be hidden, "Content-
+	 			Type:" 
+	 			like text/html, "Content-Length".</p>
+	 		<p><b>Server</b> -A server is a computer that interacts with a 
+	 			request we make to the computer. For example, whenever we 
+	 			type in "http://www.google.com", we are sending a request to 
+	 			Google's servers to return a website.</p>
+
+      <p> We will be exploring how to set up our own server that will 
+          respond to our own browser requests.</p>
+	 		<p>Servers purpose is to respond to Client request. 2 
+	 			types which are Static or pre-written file like an image; and 
+	 			Dynamic where response built on the fly by program that is running. 
+	 			Most content today is dynamic and built by programs called web 
+	 			applications which is what we'll be building. </p>
+	 		<p>
+	 		<b>HTML Forms</b> - allow you to create an entry space using the
+	 		 tag form. Input is the tag that can take a couple of attributes. 
+	 		 Like 
+	 		input name. When press enter or click submit, you are submitting a 
+	 		form. URLs can't have spaces in theme so your browser will enter 
+	 		spacers such as better+flight+search. User "password" input type to 
+	 		collect passwords but will not be secure. Use "checkbox" with 
+	 		name to display checkbox. Use "radio" and give same name so can 
+	 		only select one option. "label" attribute lets you label each box.
+	 		</p>
+	 		
+	 		<p> <b>Validation</b> allows you to make your website safe from 
+	 		hackers using input validation. Validation means verifying on the 
+	 		server side so it knows when it receives junk or bad data. It also 
+	 		ensures it is clear to the user when incorrect info is entered.  
+	 		</p>	
+	 		<p> Limiting values that the user can select doesn't protect 
+	 		against someone using a form with bad data to post that bad data to 
+	 		your server. You have to have a way to verify the validity of the 
+	 		input and send error with error message if invalid.</p>  
+	 		<p><b>String substitution</b> - Use to avoid repetition such as if 
+	 			we want to return a lot of bold content without continually 
+	 			using bold 
+	 		tags. So instead use "<b>%s</b>" % .
+
+	 		 Escaping will prevent data entered from messing up our html . Such 
+	 		as &lt;<b>&gt;</b>.	You can also import cgi in python which will 
+	 		 apply the escape command where needed. 
+
+	 		 Redirection: Used to allow you to share success link and reload 
+	 		 page. Directs user to a success page. Also reloading the success 
+	 		 page doesnt resubmit the form. and to have distinct pages for 
+	 		 forms and successes </p>
+
+	 		 <p><b> HTML Templates</b> - Separate different type of code, make 
+	 		 	more readable code, make a more secure website, and make html 
+	 		 	easier to 
+	 		 	modify. Use Template libraries like jinja2 to build complicated
+	 		 	strings. </p>
+	 		 <p><b>Variable Substitution</b> - in templates allows you to use 
+	 		 	variables to populate values in an HTML document using tags. 
+	 		 	Statement Syntax and Loop Syntax are methods for achieving this 
+	 		 	kind of substitution. </p>
+	 		
+	 		 <p><b> Template Inheritance</b> - use one template for setting up 
+	 		 	the page, and subtemplates that redefine the content. Again 
+	 		 	demonstrates the concept of abstraction in that it minimizes 
+	 		 	code to avoid repetition by projecting a template format for 
+	 		 	the subtemplates containing content.</p>
+
+	 		 <div class="Importanttips">  
+	 		 	<li>Always automatically escape variables</li>
+	 		 	<li>Minimize code in templates</li>
+	 		 	<li>Minimize html in code</li>
+	 		 </div>
+
+	 		 <p><b>Database</b> - Program that stores and returns large amounts
+	 		  of structured data. Types of databases include Relational (like 
+	 		  SQL), Google App Engine Data Store which uses objects instead of
+	 		   tables. Indexing help increase the speed of queries and allow 
+	 		   data to be sorted. 
+	 		
+	 		 <div class = "Importanttips">
+	      		<p><b>ACID</b></p>
+	    		<ul>
+	    			<li>Atomicity - all parts of a transaction succeed or fail 
+	    				together</li>
+	    			<li>Consistency - the database will always be consistent 
+	    				and is achieved through replication</li>
+	    			<li>Isolation - No transactions can interfere with another's
+	    			</li>
+	    			<li>Durability - Once a transaction is committed it won't 
+	    				be lost</li>
+	    		</ul>
+	    	</div>	
+	    <div class="Lesson">
+		  <h2 id="stage-5">Stage-5: What I learned in the Final Stage</h2>
+		</div>
+
+			<div class = "Lessontext">
+				<p><b>JavaScript (JS) and jQuery</b></p>
+				<p>
+                  The following link: 
+                  <a href="http://javascript.info/tutorial/adding-script-html#external-scripts">
+                  	JavaScript Tutorial</a> is where I learned these facts about the power of JS.
+                  	<span class="bold">JavaScript</span> aka JS is <span class="bold">the</span> 
+                  	programming language used in front end web development because it helps bring
+                    web pages to life! JS requires a <span class="italic">SCRIPT</span> tag and 
+                    a<span class="italic">VAR</span> syntax to delcare variables plus everything 
+                    in JS is an Object. Script tags can be put anywhare on the page but the most 
+                    useful places are inside the HEAD tag and at the end right before the closing 
+                    BODY tag as this aids in proper page rendering. Reminder that only SCRIPT tags 
+                    are allowed anywhere, CSS styles MUST be placed in the HEAD according to standard. 
+                    Try the link and practice pulling rabbits out of the hat!
+                </p>
+                <p>
+                   The following link: 
+                   <a href="http://www.w3.org/TR/DOM-Level-2-Core/introduction.html">
+                   	What is the Document Object Model?</a> is where I learned about another i
+                   	mportant tool used with JS, <span class="bold">jQuery</span>. jQuery is a 
+                   	common JS library for reading and making changes to the Document Object Model 
+                   	(DOM).  The DOM is a tree that contains information about what is actually 
+                   	visible on the a website. While HTML is a static document, the browser converts 
+                   	HTML to the DOM and the DOM can change.  In fact, the power behind JS comes from 
+                   	its ability to manipulate the DOM, which is essentially a JS object.  When JS makes 
+                   	something interesting happen on a website, it's likely the action happened because 
+                   	JS changed the DOM. jQuery is fast and easy to use, but anything it can do, a 
+                   	programmer can do with regular JS code.
+                </p>
+			</div>	
+ 		</div>
+
+
+	</body>	
+
+</html>
